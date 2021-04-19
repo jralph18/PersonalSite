@@ -90,7 +90,7 @@ body {
 }
 
 .navbar .shopping-cart {
-      color: white;
+    
       display: block;
       margin: 0;
       padding-right: 20px;
@@ -104,8 +104,8 @@ body {
 }
 
 .navbar .shopping-cart a {
+    color: #4f391a;
       text-decoration: none;
-      color: white;
 }
 
 .navbar .shopping-cart a:hover {
@@ -119,7 +119,7 @@ body {
 .header {
     position: relative;
     text-align: center;
-    color: white;
+    color: pink;
 }
 
 @keyframes text-enlarge{
@@ -144,7 +144,8 @@ body {
 }
 
 .home-content {
-    display: inline-flex;
+    display: inline-grid;
+    grid-template-columns: 33% 34% 33%;
 }
 
 @keyframes box-fade{
@@ -153,19 +154,38 @@ body {
 }
 .home-content .rectangle {
     background-color: lavender;
-    width: 50%;
+    width: 100%;
     animation-name: box-fade;
     animation-duration: 4s;
 }
 
+.home-content .rectangle .left {
+    grid-column: 1 / span 1;
+}
+
+.home-content .rectangle .right {
+    grid-column: 3 / span 1;
+}
+
+.home-content .rectangle .middle {
+    grid-column: 2 / span 1;
+}
+
 .home-content .paragraph {
-    width: 50%;
+    width: 100%;
     padding: 10px;
 }
 
 .home-content ul {
     text-shadow: 1px 1px pink;
 }
+
+.home-content .card {
+    justify-self: center;
+    border: none;
+}
+
+
 
 footer {
     background: #b0ebd2;
