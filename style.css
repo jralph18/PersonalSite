@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    flex: 1 0 auto;
+    padding-top: 70px;
+    font-family: "Josefin Sans";
+} 
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b0ebd2;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.navbar ul {
+    display: inline-flex;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
+
+.navbar li {
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #4f391a;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar .logo-image {
+    display: inline-flex;
+    height: 70px;
+    width: 70px;
+}
+
+.navbar .search-container {
+    margin-left: 10px;
+    justify-self: flex-end;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+  }
+
+.navbar .search-container button {
+    float:right;
+    display: inline-flex;
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .divider {
+      display: flex;
+      flex: 1;
+}
+
+.navbar .shopping-cart {
+      color: white;
+      display: block;
+      margin: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+      align-content: center;
+}
+
+.navbar .shopping-cart p {
+      display: block;
+      margin: 0 5px 8px 0;
+}
+
+.navbar .shopping-cart a {
+      text-decoration: none;
+      color: white;
+}
+
+.navbar .shopping-cart a:hover {
+    color: #4f391a;
+}
+
+.navbar .shopping-cart img {
+      float: right;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+@keyframes text-enlarge{
+    from {font-size: 0;}
+    to {font-size: 70px;}
+}
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Oswald";
+    font-size: 70px;
+    font-weight: 600;
+    animation-name: text-enlarge;
+    animation-duration: 4s;
+}
+
+.header img{
+    display: flex;
+    width: 100vw;
+}
+
+.home-content {
+    display: inline-flex;
+}
+
+@keyframes box-fade{
+    from {background-color: #fcc6c2;}
+    to {background-color: lavender;}
+}
+.home-content .rectangle {
+    background-color: lavender;
+    width: 50%;
+    animation-name: box-fade;
+    animation-duration: 4s;
+}
+
+.home-content .paragraph {
+    width: 50%;
+    padding: 10px;
+}
+
+.home-content ul {
+    text-shadow: 1px 1px pink;
+}
+
+footer {
+    background: #b0ebd2;
+    position: relative;
+    padding: 30px 50px;
+    text-align: center;
+    font-family: "Oswald";
+}
+
+footer a {
+    padding: 5px;
+}
